@@ -1,3 +1,350 @@
 /* HEADER START */
+.table-wrap {
+    display: flex;
+    width: 100%;
+    max-width: 1360px;
+}
+
+.table-list,
+.post-list,
+.comment-list {
+    width: 400px;
+    height: 100vh;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.table-list__item,
+.post-list__item,
+.comment-list__item {
+
+    margin-bottom: 20px;
+    // background-color: gray;
+}
+
+.table-list__item {
+    &::after {
+        position: absolute;
+        z-index: 1000;
+        width: 100px;
+        height: 120px;
+        top: 15px;
+        left: 0px;
+        right: 0px;
+        margin-left: 20px;
+        background-image: url("/images/1.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+        content: "";
+    }
+}
+
+.table-list__item:nth-child(2) {
+    &::after {
+        background-image: url("/images/2.jpg");
+    }
+}
+
+.table-list__item:nth-child(3) {
+    &::after {
+        background-image: url("/images/3.jpeg");
+    }
+}
+
+.table-list__item:nth-child(4) {
+    &::after {
+        background-image: url("/images/4.webP");
+    }
+}
+
+.table-list__item:nth-child(5) {
+    &::after {
+        background-image: url("/images/5.png");
+
+    }
+}
+
+.table-list__item:nth-child(6) {
+    &::after {
+        background-image: url("/images/6.jpg");
+    }
+}
+
+.table-list__item:nth-child(7) {
+    &::after {
+        background-image: url("/images/7.jpg");
+    }
+}
+
+.table-list__item:nth-child(8) {
+    &::after {
+        background-image: url("/images/8.jpg");
+    }
+}
+
+.table-list__item:nth-child(9) {
+    &::after {
+        background-image: url("/images/9.jpg");
+    }
+}
+
+.table-list__item:nth-child(10) {
+    &::after {
+        background-image: url("/images/10.webP");
+    }
+}
+
+p,
+a {
+    margin: 0px 0px 14px 0px;
+    color: #fff;
+}
+
+h3 {
+    color: #fff;
+}
+
+.table-list__id,
+.post-list__id,
+.comment-list__id {
+    text-align: right;
+    font-size: 80px;
+    color: #a9a9a9;
+    margin: 0px;
+}
+
+.table-list__name-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.table-list__username {
+    margin-right: 10px;
+    font-size: 26px;
+    color: #fff;
+}
+
+.table-list__name {
+
+    font-size: 26px;
+}
+
+.table-list__email {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    font-size: 18px;
+
+    &::before {
+        margin-right: 20px;
+        width: 25px;
+        height: 25px;
+        background-image: url("/images/email.svg");
+        background-size: contain;
+        content: "";
+    }
+}
+
+.table-list__adress-title {
+    color: #33CCCC;
+    text-align: center;
+    font-size: 30px;
+}
+
+.table-list__adress-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.table-list__geo {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    font-size: 18px;
+    border: 2px solid #fff;
+    padding: 10px 6px 10px 10px;
+    border-radius: 10px;
+
+    &::before {
+        width: 25px;
+        height: 25px;
+        background-image: url("/images/geo.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+    }
+}
+
+.table-list__phone {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    font-size: 18px;
+    border: 2px solid #fff;
+    padding: 10px 6px 10px 10px;
+    border-radius: 10px;
+
+    &::before {
+        width: 25px;
+        height: 25px;
+        background-image: url("/images/phone.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+    }
+}
+
+.table-list__adress-email {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    margin: 0 auto;
+    font-size: 18px;
+    border: 2px solid #fff;
+    padding: 10px 6px 10px 10px;
+    border-radius: 10px;
+
+    &::before {
+        width: 25px;
+        height: 25px;
+        margin-right: 6px;
+        background-image: url("/images/emailCompany.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+    }
+}
+
+.table-list__company-info {
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: center;
+    color: #33CCCC;
+}
+
+.table-list__company-title {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+
+    &::before {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        background-image: url("/images/company.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+    }
+}
+
+.table-list__company-box {
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #808080;
+    border: 2px solid #fff;
+
+}
+
+.table-list__catch {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.table-list__bs {
+    margin: 0px;
+    color: #fff;
+}
+
+button {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto 0px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    border: 2px solid #fff;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+    background-blend-mode: multiply, multiply;
+    border-radius: 10px;
+
+    &:hover {
+        color: #000;
+        background-color: #fff;
+        border: 2px solid #000;
+    }
+    &::after{
+        width: 30px;
+        height: 30px;
+        background-image: url("/images/arrow.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+    }
+}
 
 /* HEADER END */
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+
+
+li {
+    position: relative;
+    padding: 15px;
+    background-color: #191c29;
+    border-radius: 6px;
+}
+
+li::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+
+    100% {
+        --rotate: 360deg;
+    }
+}
+
+ul::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+ul::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #fff;
+
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    background-color: #fff;
+    border-radius: 5px;
+}

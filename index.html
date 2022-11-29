@@ -6,49 +6,69 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
-  <title>Template</title>
+  <title>Table list</title>
 </head>
 
 <body>
-  <!-- HEADER START -->
-  <header class="site-header">
-    <div class="container">
-      <div class="header-wrap">
-        <a href="./index.html">
-          <img src="" 
-          width=""
-          height=""
-          alt=" site's logo">
-          <nav class="header-wrap__site-nav site-nav">
+  <div class="container">
+    <div class="table-wrap">
+      <ul class="table-list">
 
-          </nav>
-        </a>
-      </div>
+      </ul>
+      <ul class="post-list">
+
+      </ul>
+      <ul class="comment-list">
+
+      </ul>
     </div>
-  </header>
-  <!-- HEADER END -->
+  </div>
 
-  <!-- MAIN START -->
-  <main>
-    <!-- SECTION START -->
-    <section class="">
-      <div class="container">
-
+  <template class="template">
+    <li class="table-list__item">
+      <p class="table-list__id"></p>
+      <div class="table-list__name-box">
+        <p class="table-list__username"></p>
+      <p class="table-list__name"></p>
       </div>
-    </section>
-    <!-- SECTION START -->
-    <!-- MAIN END -->
-
-    <!-- FOOTER START -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-wrap">
-
-        </div>
+      <a class="table-list__email" target="blank" href=""></a>
+      <h3 class="table-list__adress-title">Adress</h3>
+      <div class="table-list__adress-box">
+        <a class="table-list__geo" target="blank" href="">Geo location</a>
+        <a class="table-list__phone" href="">Phone number</a>
+        <p class="table-list__adress-email"></p>
       </div>
-    </footer>
-    <!-- FOOTER END -->
-  </main>
+      <h3 class="table-list__company-info">Company info</h3>
+      <p class="table-list__company-title"></p>
+      <div class="table-list__company-box">
+        <p class="table-list__catch"></p>
+      <p class="table-list__bs"></p>
+      </div>
+      <button class="table-list__btn">Go to post</button>
+    </li>
+  </template>
+  <template class="post-template">
+    <li class="post-list__item">
+      <h3 class="post-list__id"></h3>
+      <h3 class="post-list__title"></h3>
+      <p class="post-list__text"></p>
+      <p class="post-list__id"></p>
+      <button class="post-list__btn">Comment</button>
+      <p></p>
+    </li>
+  </template>
+  <template class="comment-template">
+    <li class="comment-list__item">
+      <p class="comment-list__id"></p>
+      <h3 class="comment-list__name"></h3>
+      <p class="comment-list__text"></p>
+      <!-- <button class="comment-list__btn">Comment</button> -->
+      <p></p>
+    </li>
+  </template>
+
+
+  <script src="./main.js"></script>
 </body>
 
 </html>
